@@ -3,8 +3,11 @@
 void printHello()
 {
     printf("Hello, Git. I am learnig git\n");
+}
 
-    greeting("Git");
+void display()
+{
+    printf("Hello, hello\n");
 }
 
 int main()

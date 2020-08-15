@@ -3,6 +3,8 @@
 void printHello()
 {
     printf("Hello, Git. I am learnig git\n");
+
+    greeting("Git");
 }
 
 void myFunc()
@@ -12,7 +14,7 @@ void myFunc()
 
 int main()
 {
-    printf("Hello, World\n");
+    printf("Bye, tata\n");
     printHello();
 
     return 0;

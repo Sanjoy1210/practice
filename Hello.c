@@ -1,18 +1,8 @@
 #include <stdio.h>
 
-void printHello()
+void message()
 {
-    printf("Hello, Git. I am learnig git\n");
-}
-
-void display()
-{
-    printf("Hello, hello\n");
-}
-
-void myFunc()
-{
-    printf("Wow, I am excited to learn git\n");
+    printf("Hurrah, now we are able to contribute on opersource\n");
 }
 
 int main()

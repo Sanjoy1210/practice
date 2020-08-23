@@ -1,14 +1,20 @@
 #include <stdio.h>
 
-int mian()
+int number(int n)
 {
-    int i, j;
+    if(n == 0) return 0;
 
-    for(i = 1; i <= 9; i++){
-        for(j = 1; j <= 9; j++){
-            printf("%d ", j);
-        }
-        printf("\n");
-    }
+    printf("Number = %d\n", n);
+    int m = n % 10;
+    int sum = number(n / 10);
+    int result = m + sum;
+    printf("Number = %d, Reminder = %d, Sum = %d, Result = %d\n", n, m, sum, result);
+    return result;
+}
+
+int main()
+{
+    number(16537);
+    printf("%d\n", number(16537));
     return 0;
 }

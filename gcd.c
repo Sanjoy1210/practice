@@ -1,17 +1,22 @@
 #include <stdio.h>
 
-int gcd(int a, int b)
-{
-    printf("A = %d, B = %d, AB = %d\n", a, b, a % b);
-    if(a % b == 0) return b;
-    return gcd(b, a % b);
-}
-
 int main()
 {
-    gcd(468, 30);
+    int a, b, x, gcd;
 
-    printf("%d\n", gcd(468, 30));
+    scanf("%d %d", &a, &b);
+
+    if(a > b) x = b;
+    else x = a;
+
+    for( ; x >= 1; x--){
+        if(a % x == 0 && b % x == 0){
+            gcd = x;
+            break;
+        }
+    }
+
+    printf("The gcd of %d and %d = %d\n", a, b, gcd);
 
     return 0;
 }
